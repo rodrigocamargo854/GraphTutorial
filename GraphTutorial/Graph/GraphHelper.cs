@@ -8,7 +8,7 @@ namespace GraphTutorial
 {
     public class GraphHelper
     {
-        private static GraphServiceClient graphClient;
+        public static GraphServiceClient graphClient;
         public static void Initialize(IAuthenticationProvider authProvider)
         {
             graphClient = new GraphServiceClient(authProvider);

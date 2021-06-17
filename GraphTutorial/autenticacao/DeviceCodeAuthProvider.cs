@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
+
 namespace GraphTutorial
 {
     public class DeviceCodeAuthProvider : IAuthenticationProvider
@@ -12,6 +13,9 @@ namespace GraphTutorial
         private IPublicClientApplication _msalClient;
         private string[] _scopes;
         private IAccount _userAccount;
+        private static GraphServiceClient graphClient;
+
+
 
         public DeviceCodeAuthProvider(string appId, string[] scopes)
         {
@@ -25,13 +29,15 @@ namespace GraphTutorial
 
         public async Task<string> GetAccessToken()
         {
+            
             // If there is no saved user account, the user must sign-in
             if (_userAccount == null)
             {
                 try
                 {
                     // Invoke device code flow so user can sign-in with a browser
-                    var result = await _msalClient.AcquireTokenWithDeviceCode(_scopes, callback => {
+                    var result = await _msalClient.AcquireTokenWithDeviceCode(_scopes, callback =>
+                    {
                         Console.WriteLine(callback.Message);
                         return Task.FromResult(0);
                     }).ExecuteAsync();
@@ -51,11 +57,11 @@ namespace GraphTutorial
                 // By doing this, MSAL will refresh the token automatically if
                 // it is expired. Otherwise it returns the cached token.
 
-                    var result = await _msalClient
-                        .AcquireTokenSilent(_scopes, _userAccount)
-                        .ExecuteAsync();
+                var result = await _msalClient
+                    .AcquireTokenSilent(_scopes, _userAccount)
+                    .ExecuteAsync();
 
-                    return result.AccessToken;
+                return result.AccessToken;
             }
         }
 

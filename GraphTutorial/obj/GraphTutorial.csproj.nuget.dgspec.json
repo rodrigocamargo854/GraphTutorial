@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodrigo.godoy\\Desktop\\dotnetMicrosoftGraph\\GraphTutorial\\GraphTutorial.csproj": {}
+    "C:\\Users\\rodrigo.godoy\\Desktop\\GraphsTutoriais\\GraphTutorial\\GraphTutorial\\GraphTutorial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodrigo.godoy\\Desktop\\dotnetMicrosoftGraph\\GraphTutorial\\GraphTutorial.csproj": {
+    "C:\\Users\\rodrigo.godoy\\Desktop\\GraphsTutoriais\\GraphTutorial\\GraphTutorial\\GraphTutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodrigo.godoy\\Desktop\\dotnetMicrosoftGraph\\GraphTutorial\\GraphTutorial.csproj",
+        "projectUniqueName": "C:\\Users\\rodrigo.godoy\\Desktop\\GraphsTutoriais\\GraphTutorial\\GraphTutorial\\GraphTutorial.csproj",
         "projectName": "GraphTutorial",
-        "projectPath": "C:\\Users\\rodrigo.godoy\\Desktop\\dotnetMicrosoftGraph\\GraphTutorial\\GraphTutorial.csproj",
+        "projectPath": "C:\\Users\\rodrigo.godoy\\Desktop\\GraphsTutoriais\\GraphTutorial\\GraphTutorial\\GraphTutorial.csproj",
         "packagesPath": "C:\\Users\\rodrigo.godoy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodrigo.godoy\\Desktop\\dotnetMicrosoftGraph\\GraphTutorial\\obj\\",
+        "outputPath": "C:\\Users\\rodrigo.godoy\\Desktop\\GraphsTutoriais\\GraphTutorial\\GraphTutorial\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rodrigo.godoy\\AppData\\Roaming\\NuGet\\NuGet.Config",
